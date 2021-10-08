@@ -53,7 +53,7 @@ p {
   border-width: 4px 0;
   padding: 1.5em 0em;
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 22vw;
   width: 90vw;
   margin: 0 0 0 -20em;
@@ -92,16 +92,16 @@ p {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 30%;
-  left: calc(50% - 12.5vw);
+  top: 25%;
+  left: calc(50% - 15vw);
 }
 .block {
   display: flex;
   flex-direction: column;
-  width: 25vw;
-  height: 15vh;
+  justify-content: space-around;
+  width: 30vw;
+  height: 13vh;
   margin-bottom: 2vh;
-  
 }
 .title-kategori {
   font-size: 2vw;
@@ -117,9 +117,9 @@ p {
   background: linear-gradient(90deg, #e6ba2d, #000000);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: #e4e4e4;
-
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: transparent;
+  line-height: 4vh;
 }
 
 
@@ -158,11 +158,6 @@ p {
     }
 }
 
-
-
-
-
-
 .wrap-question {
   position: absolute;
   top: 30%;
@@ -172,15 +167,16 @@ p {
 .question {
   width: 100%;
   margin: 0 auto;
+  display: none;
 }
 .title-question {
   font-size: 3vw;
   background: linear-gradient(90deg, #6325C0, #EA1D58);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: #e4e4e4;
-
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: transparent;
+  margin-bottom: 4vh;
 }
 .wrap-answer {
   padding-left: 30%;
@@ -196,6 +192,14 @@ p {
   font-size: 2.8vw;
   color:#d3c6c6;
 }
+#timer {
+  position: relative;
+  bottom: -90vh;
+  color:#e4e4e4;
+  font-size: 3vw;
+}
+
+
 
 @media (min-width: 375px) and (max-width: 767px) {
 
@@ -203,17 +207,15 @@ p {
     font: 700 2em "Oswald", sans-serif;
   }
   p {
-    top: 3%;
+    top: 1%;
     left: 92vw;
   }
   .title-question {
-    font-size: 4vw;
-    margin-bottom: 2vh;
+    font-size: 7vw;
+    margin-bottom: 6vh;
   }
-
-
   .answer {
-    font-size: 4vw;
+    font-size: 6vw;
 }
 
 .wrap {
@@ -224,11 +226,17 @@ p {
   height: 10vh;
   margin-bottom: 4vh;
 }
+.wrap-answer {
+  padding-left: 0;
+}
+.answer {
+  text-align: center;
+}
 .wrap-kategori {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 38%;
+  top: 31%;
   left: calc(50% - 26.5vw);
 }
 .title-kategori {
@@ -243,13 +251,11 @@ p {
 .wrap-question {
   top: 34%;
 }
-.wrap-answer {
-  padding-left: 23%;
-  padding-bottom: 3vh;
-}
 .wrap {
   
 }
-
+#timer {
+  font-size: 10vw;
+}
 
 }
