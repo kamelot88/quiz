@@ -36,6 +36,8 @@ li {
 
 /*Flex Framework_конец*/
 body { 
+  display: flex;
+  justify-content: center;
   max-height: 100vh;
   font: 400 1em/1.5 "Neuton"; 
   background: #090d00; 
@@ -44,19 +46,19 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
  }
-
+.title {
+  padding-top: 2vh;
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  margin-bottom: 2vh;
+}
 p {
   text-transform: uppercase;
   letter-spacing: .5em;
-  display: inline-block;
   border: 4px double rgba(255,255,255,.25);
   border-width: 4px 0;
   padding: 1.5em 0em;
-  position: absolute;
-  top: 3%;
-  left: 22vw;
-  width: 90vw;
-  margin: 0 0 0 -20em;
 }
   span {
     font: 700 4em/1 "Oswald", sans-serif;
@@ -91,9 +93,7 @@ p {
 .wrap-kategori {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 25%;
-  left: calc(50% - 15vw);
+  align-items: center;
 }
 .block {
   display: flex;
@@ -159,8 +159,6 @@ p {
 }
 
 .wrap-question {
-  position: absolute;
-  top: 30%;
   max-height: 60vh;
   width: 100vw;
 }
@@ -193,8 +191,8 @@ p {
   color:#d3c6c6;
 }
 #timer {
-  position: relative;
-  bottom: -90vh;
+  position: absolute;
+  bottom: 2vh;
   color:#e4e4e4;
   font-size: 3vw;
 }
@@ -203,21 +201,20 @@ p {
 
 @media (min-width: 375px) and (max-width: 767px) {
 
-  span {
-    font: 700 2em "Oswald", sans-serif;
-  }
-  p {
-    top: 1%;
-    left: 92vw;
-  }
-  .title-question {
-    font-size: 7vw;
-    margin-bottom: 6vh;
-  }
-  .answer {
-    font-size: 6vw;
+.title {
+  padding-top: 1vh;
+  margin-bottom: 2vh;
 }
-
+span {
+  font: 700 2em "Oswald", sans-serif;
+  }
+.title-question {
+  font-size: 7vw;
+  margin-bottom: 6vh;
+  }
+.answer {
+  font-size: 6vw;
+}
 .wrap {
   max-width: 100vw;
 }
@@ -232,12 +229,12 @@ p {
 .answer {
   text-align: center;
 }
+.wrap-kategori > .block5 {
+  margin-bottom: 0;
+}
 .wrap-kategori {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 31%;
-  left: calc(50% - 26.5vw);
 }
 .title-kategori {
   font-size: 5vw;
@@ -248,14 +245,8 @@ p {
 .question {
   width: 80%;
 }
-.wrap-question {
-  top: 34%;
-}
-.wrap {
-  
-}
 #timer {
-  font-size: 10vw;
+  font-size: 12vw;
 }
 
 }
