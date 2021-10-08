@@ -37,8 +37,9 @@ li {
 /*Flex Framework_конец*/
 body { 
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   font: 400 1em/1.5 "Neuton"; 
   background: #090d00; 
   color: rgba(255,255,255,.25); 
@@ -159,7 +160,7 @@ p {
 }
 
 .wrap-question {
-  max-height: 60vh;
+  /* max-height: 60vh; */
   width: 100vw;
 }
 .question {
@@ -191,9 +192,6 @@ p {
   color:#d3c6c6;
 }
 #timer {
-  position: absolute;
-  bottom: 2vh;
-  color:#e4e4e4;
   font-size: 3vw;
   color: red;
 }
@@ -210,7 +208,7 @@ span {
   }
 .title-question {
   font-size: 7vw;
-  margin-bottom: 3мр;
+  margin-bottom: 3vh;
   }
 .answer {
   font-size: 6vw;
@@ -247,9 +245,12 @@ span {
 }
 #timer {
   font-size: 12vw;
-  bottom: 1vh;
   line-height: 12vw;
   font-weight: bold;
+}
+.q-b > h3 {
+  font-size: 6vw;
+  margin-bottom: 1vh;
 }
 
 }
