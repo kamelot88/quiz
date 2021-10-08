@@ -195,6 +195,7 @@ p {
   bottom: 2vh;
   color:#e4e4e4;
   font-size: 3vw;
+  color: red;
 }
 
 
@@ -203,14 +204,13 @@ p {
 
 .title {
   padding-top: 1vh;
-  margin-bottom: 2vh;
 }
 span {
   font: 700 2em "Oswald", sans-serif;
   }
 .title-question {
   font-size: 7vw;
-  margin-bottom: 6vh;
+  margin-bottom: 0;
   }
 .answer {
   font-size: 6vw;
@@ -243,10 +243,13 @@ span {
   font-size: 4.5vw;
 }
 .question {
-  width: 80%;
+  width: 90%;
 }
 #timer {
   font-size: 12vw;
+  bottom: 1vh;
+  line-height: 12vw;
+  font-weight: bold;
 }
 
 }
