@@ -60,6 +60,7 @@ p {
   border: 4px double rgba(255,255,255,.25);
   border-width: 4px 0;
   padding: 1.5em 0em;
+  width: 100%;
 }
   span {
     font: 700 4em/1 "Oswald", sans-serif;
@@ -195,6 +196,69 @@ p {
   font-size: 3vw;
   color: red;
 }
+.wrap-rebus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rebus {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  margin-bottom: 4vh;
+}
+.wrap-img > img {
+  width: 10vw;
+}
+.wrap-img > .plus {
+  font-size: 6vw;
+  color: yellow;
+}
+.wrap-option > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.option {
+  border: 2px solid wheat;
+  margin-bottom: 3vh;
+  font-family: 'Cinzel', serif;
+  font-size: 2.2vw;
+  color: #d3c6c6;
+  border-radius: 10px;
+  color: black;
+  background: wheat;
+}
+.title-option {
+  font-size: 3vw;
+  background: linear-gradient(
+90deg, #6325C0, #EA1D58);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #e4e4e4;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: transparent;
+  margin-bottom: 3vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -252,5 +316,33 @@ span {
   font-size: 6vw;
   margin-bottom: 1vh;
 }
+.wrap-img {
+  width: 90vw;
+}
+.wrap-img > img {
+  width: 25vw;
+}
+.wrap-img > .plus {
+  font-size: 10vw;
+}
+.option {
+  margin-bottom: 3vh;
+  font-size: 4vw;
+  text-align: start;
+}
+.wrap-option {
+  width: 90vw;
+}
+.title-option {
+  font-size: 6vw;
+}
+
+
+
+
+
+
+
+
 
 }
