@@ -167,7 +167,7 @@ p {
 .question {
   width: 100%;
   margin: 0 auto;
-  /* display: none; */
+  display: none;
 }
 .title-question {
   font-size: 3vw;
@@ -202,7 +202,7 @@ p {
   align-items: center;
 }
 .rebus {
-  /* display: none; */
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -254,10 +254,14 @@ p {
 .wrap-option > .option {
   text-align: start;
   width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 2vh;
 }
 .wrap-option {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+}
+.zagadka {
+  display: none;
 }
 
 
@@ -352,10 +356,8 @@ span {
 .zagadka-img > img {
   width: 80vw;
 }
-.zagadka {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.wrap-option > .option {
+  margin-bottom: 5vh;
 }
 
 
