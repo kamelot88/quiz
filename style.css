@@ -245,7 +245,20 @@ p {
   -webkit-text-stroke-color: transparent;
   margin-bottom: 3vh;
 }
-
+.zagadka-img {
+  margin-bottom: 3vh;
+}
+.zagadka-img > img {
+  width: 30vw;
+}
+.wrap-option > .option {
+  text-align: start;
+  width: 80vw;
+}
+.wrap-option {
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -336,7 +349,14 @@ span {
 .title-option {
   font-size: 6vw;
 }
-
+.zagadka-img > img {
+  width: 80vw;
+}
+.zagadka {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 
