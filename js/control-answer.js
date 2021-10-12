@@ -77,12 +77,12 @@ var myAudio4Kaver = new Audio('./audio/4_TSOY - Позови Меня С Соб�
 var myAudio5Kaver = new Audio('./audio/5_R3hab - Smells Like Teen Spirit (feat. Amba Shepherd).wav');
 var myAudio6Kaver = new Audio('./audio/6_filatov-karas-feat-masha-lirika.wav');
 
-var myAudio1_origin = new Audio('./audio/');
-var myAudio2_origin = new Audio('./audio/');
-var myAudio3_origin = new Audio('./audio/');
-var myAudio4_origin = new Audio('./audio/');
-var myAudio5_origin = new Audio('./audio/');
-var myAudio6_origin = new Audio('./audio/');
+var myAudio1_origin = new Audio('./audio/1_Валерий Меладзе - Салют, Вера.wav');
+var myAudio2_origin = new Audio('./audio/2_Nina_Brodskaya_-_Zvenit_yanvarskaya_vyuga_(musmore.com).wav');
+var myAudio3_origin = new Audio('./audio/3_Браво - Любите Девушки.wav');
+var myAudio4_origin = new Audio('./audio/4_Алла Пугачёва - Позови Меня С Собой.wav');
+var myAudio5_origin = new Audio('./audio/5_Nirvana - Smells Like Teen Spirit .wav');
+var myAudio6_origin = new Audio('./audio/6_Сектор газа - Лирика.wav');
 
 
 var playKaver1 = document.querySelector("body > div > div.wrap-kategori-answer > div.wrap-kaver > div.kaver.kaver1 > div:nth-child(3) > img:nth-child(1)");
