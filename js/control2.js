@@ -11,7 +11,7 @@ function myLoop () {
     setTimeout(function () {
     colectionQuestions[i].style.display = 'none';
       i++; // увеличиваю инднекс на 1
-      if (i < 11) {
+      if (i < 10) {
         myLoop ();// пока индекс мень 11 выполняю функции
       } else {
         document.location.href = "index.html";

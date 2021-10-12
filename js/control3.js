@@ -10,15 +10,14 @@
 // audio.play();
 
 
-var myAudio1 = new Audio('./audio/filatov-karas-feat-masha-lirika (1).wav');
-var myAudio2 = new Audio('../audio/skyforge-trek-dlya-viktoriny.mp3');
-var myAudio3 = new Audio('./audio/');
-var myAudio4 = new Audio('./audio/');
-var myAudio5 = new Audio('./audio/');
-var myAudio6 = new Audio('./audio/');
-var myAudio7 = new Audio('./audio/');
+var myAudio1 = new Audio('./audio/1_Mona Songz - Салют, Вера.wav');
+var myAudio2 = new Audio('../audio/2_Vanilla_Sky_-_Zvenit_yanvarskaya_vyuga_(musmore.com).wav');
+var myAudio3 = new Audio('./audio/3_Скриптонит, Therr Maitz - Любите Девушки_[mp3mob.net].wav');
+var myAudio4 = new Audio('./audio/4_TSOY - Позови Меня С Собой.wav');
+var myAudio5 = new Audio('./audio/5_R3hab - Smells Like Teen Spirit (feat. Amba Shepherd).wav');
+var myAudio6 = new Audio('./audio/6_filatov-karas-feat-masha-lirika.wav');
 
-var collectionAudio = [myAudio1, myAudio2, myAudio3, myAudio4, myAudio5, myAudio6, myAudio7];
+var collectionAudio = [myAudio1, myAudio2, myAudio3, myAudio4, myAudio5, myAudio6];
 
 // myAudio1.play();
 
@@ -39,17 +38,17 @@ function myLoop () {
     setTimeout(function () {
     colectionQuestions[i].style.display = 'none';
       i++; // увеличиваю инднекс на 1
-      if (i < 6) {
+      if (i < 5) {
         myLoop ();// пока индекс мень 10 выполняю функции
       } else {
         document.location.href = "index.html";
       }
-   }, 40000); // устанавливаю интервал в милисекундах
+   }, 45000); // устанавливаю интервал в милисекундах
 }
 
 
 
-    var sec = 39;
+    var sec = 44;
     var displayTime = document.querySelector("#timer");
     
 
@@ -59,7 +58,7 @@ function myLoop () {
       sec--;
       if(sec == 0)
       {
-        sec = 40;
+        sec = 45;
       }
      }, 1000);
   
