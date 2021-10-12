@@ -266,7 +266,8 @@ p {
   margin: 0 auto;
 }
 .zagadka {
-  display: none;
+  /* display: none; */
+  margin-bottom: 30vh;
 }
 .wrap-img-collag > img {
   width: 60vw;
