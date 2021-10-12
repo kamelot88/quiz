@@ -41,7 +41,7 @@ function myLoop () {
       if (i < 5) {
         myLoop ();// пока индекс мень 10 выполняю функции
       } else {
-        document.location.href = "index.html";
+        document.location.href = "answer.html";
       }
    }, 45000); // устанавливаю интервал в милисекундах
 }
