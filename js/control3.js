@@ -11,7 +11,7 @@
 
 
 var myAudio1 = new Audio('./audio/1_Mona Songz - Салют, Вера.wav');
-var myAudio2 = new Audio('../audio/2_Vanilla_Sky_-_Zvenit_yanvarskaya_vyuga_(musmore.com).wav');
+var myAudio2 = new Audio('./audio/2_Vanilla_Sky_-_Zvenit_yanvarskaya_vyuga_(musmore.com).wav');
 var myAudio3 = new Audio('./audio/3_Скриптонит, Therr Maitz - Любите Девушки_[mp3mob.net].wav');
 var myAudio4 = new Audio('./audio/4_TSOY - Позови Меня С Собой.wav');
 var myAudio5 = new Audio('./audio/5_R3hab - Smells Like Teen Spirit (feat. Amba Shepherd).wav');
@@ -19,15 +19,15 @@ var myAudio6 = new Audio('./audio/6_filatov-karas-feat-masha-lirika.wav');
 
 var collectionAudio = [myAudio1, myAudio2, myAudio3, myAudio4, myAudio5, myAudio6];
 
-// myAudio1.play();
 
-// myAudio1.autoplay = true; 
 
 
 
 //? скрипт переключения блоков вопросов
 
-const colectionQuestions = document.querySelectorAll(".question"); // получаю коллекцию элементов
+const colectionQuestions = document.querySelectorAll("body > div.wrap > div.wrap-question > div.question.q-b"); // получаю коллекцию элементов
+
+
 
 
 let i = 0;      // индекс елемента в массиве
@@ -38,8 +38,8 @@ function myLoop () {
     setTimeout(function () {
     colectionQuestions[i].style.display = 'none';
       i++; // увеличиваю инднекс на 1
-      if (i < 5) {
-        myLoop ();// пока индекс мень 10 выполняю функции
+      if (i < 6) {
+        myLoop ();// пока индекс мень 5 выполняю функции
       } else {
         document.location.href = "answer.html";
       }

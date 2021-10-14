@@ -16,12 +16,12 @@ function myLoop () {
       } else {
         document.location.href = "answer.html";
       }
-   }, 30000); // устанавливаю интервал в милисекундах
+   }, 60000); // устанавливаю интервал в милисекундах
 }
 
 
 
-    var sec = 29;
+    var sec = 59;
     var displayTime = document.querySelector("#timer");
     
 
@@ -31,7 +31,7 @@ function myLoop () {
       sec--;
       if(sec == 0)
       {
-        sec = 30;
+        sec = 60;
       }
      }, 1000);
   

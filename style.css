@@ -274,8 +274,8 @@ p {
 }
 .logo {
   position: absolute;
-  top: 7vh;
-  right: 30vw;
+  top: 4vh;
+  right: 3vw;
   width: 9vw;
 }
 .title-center {
@@ -285,7 +285,7 @@ p {
 .display-button {
   margin: 0 auto;
   text-transform: uppercase;
-  font-size: 2vw;
+  font-size: 1.8vw;
   background: linear-gradient(
 180deg, #f30901, #EA1D58);
   -webkit-background-clip: text;
@@ -294,33 +294,50 @@ p {
   -webkit-text-stroke-color: transparent;
 }
 .home {
-  font-size: 1.5vw;
+  text-transform: uppercase;
+  letter-spacing: .5em;
   position: absolute;
-  top: 7vh;
-  left: 1vw;
-  color:rgb(255, 255, 255);
-  padding: 5px;
-  border: 2px solid rgb(255, 136, 0);
+  top: 8vh;
+  left: 3vw;
+  color: rgb(255, 255, 255);
+  padding: 10px 5px;
+  border: 4px double rgba(255,255,255,.25);
   border-radius: 10px;
+  border-width: 4px 4px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1vw;
+}
+.home:hover {
+  color: rgb(37, 34, 34);
+  background-color:rgb(238 97 24);
+  font-weight: bold;
 }
 .home::before {
   border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 15px solid rgb(255, 136, 0);
+    border-right: 15px solid rgba(255,255,255,.25);
     content: " ";
     width: 0;
     height: 0;
     left: -0.9vw;
-    top: 2.5vh;
+    top: 1.3vh;
     z-index: 100000;
     position: absolute;
+}
+.wrap-question > .question > .izvilina {
+  width: 90vw;
+  padding-top: 7vh;
+}
+#ancwer-body {
+  background-color: #281514;
 }
 .wrap-kategori-answer {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  padding: 5vh 0 0 0;
+  padding: 2vh 0 0 0;
 } 
 .wrap-kategori-answer > .block-answer1 > .question {
   display: block;
@@ -354,8 +371,50 @@ p {
   font-size: 4vw;
 }
 .wrap-kategori-answer > .wrap-zagadka > .zagadka {
-  display: block;
+  /* display: block; */
   margin-bottom: 35vh;
+}
+.wrap-zagadka-slider {
+  max-width: 100vw;
+  overflow: hidden;
+}
+.wrap-zagadka-slider .slider-line {
+  display: flex;
+  padding-top: 5vh;
+  transition: all ease 1s;
+}
+.wrap-zagadka-slider .slider-line > .zagadka {
+  margin-bottom: 5vh;
+  
+}
+.left, .right {
+  position: absolute;
+  top: 25vh;
+  height: 70%;
+  display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+  /* width: 3vw; */
+  border: none;
+  background: linear-gradient(
+90deg,hsla(0,0%,100%,0),#fff);
+  z-index: 10;
+  cursor: pointer;
+}
+.right svg, .left svg {
+  fill: #ee0028;
+  position: relative;
+  z-index: 20;
+}
+.left {
+  left: 2vw;
+}
+.right {
+  right: 2vw;
+}
+.wrap-zagadka-slider .slider-line > .zagadka > .wrap-option > .option {
+  margin-bottom: 0;
 }
 .option-result {
   border: 2px solid wheat;
@@ -413,10 +472,18 @@ p {
   font-weight: 700;
 }
 .name-origin:hover {
-  color: white;
+  color: red;
 }
-
-
+.kaver-timer {
+  position: absolute;
+  bottom: 5vh;
+  left: 47vw;
+}
+.q-b > .title-question {
+  padding-top: 20vh;
+  width: 60vw;
+  margin: 0 auto;
+}
 
 
 
@@ -511,7 +578,8 @@ span {
 }
 .home {
   font-size: 3vw;
-  top: 4vh;
+  top: 90vh;
+  left: 30vw;
   font-weight: 700;
 }
 .home::before {
@@ -543,7 +611,11 @@ span {
 .option-result {
   font-size: 4.5vw;
 }
-
+.left, .right {
+  position: absolute;
+  top: 35vh;
+  height: 60%;
+}
 
 
 

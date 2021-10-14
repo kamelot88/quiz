@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
     <link rel="stylesheet" href="style.css">
-    <audio src="audio/Slaboe_zveno_-_Muzyka_vo_vremya_igry_(iPleer.com).mp3" loop autoplay></audio>
+    <!-- <audio src="audio/Slaboe_zveno_-_Muzyka_vo_vremya_igry_(iPleer.com).mp3" loop autoplay></audio> -->
     <title>QUIZ</title>
 </head>
 <body>
@@ -23,44 +23,58 @@
                 &mdash; интеллект-батл &mdash;
               </p>
         </div>
-    <div class="wrap-zagadka">
-        <div class="zagadka zagadka1">
-            <div class="zagadka-img">
-                <img src="img/lampa.jpg" alt="">
-            </div>
-            <div class="wrap-option">
-                <h4 class="option option1">Есть комната с тремя лампочками. Перед входом в комнату есть три выключателя. Нажимать на выключатели можно без ограничений, но войти в соседнюю комнату можно лишь один раз. Человек узнал, какой выключатель включает определенную лампочку. Как он это сделал?</h4>
-            </div>
-        </div>
+    <div class="wrap-zagadka-slider">
 
-        <div class="zagadka zagadka2">
-            <div class="zagadka-img">
-                <img src="img/cherepaha.png" alt="">
-            </div>
-            <div class="wrap-option">
-                <h4 class="option option1">Ползут 3 черепахи. 1-я черепаха говорит: за мной ползут две черепахи. 2-я черепаха говорит: за мной ползёт одна черепаха и передо мной ползёт одна черепаха. А 3-я черепаха: передо мной ползут две черепахи, и за мной ползёт одна черепаха. Как такое может быть?</h4>
-            </div>
-        </div>
+        <div class="slider-line">
 
-        <div class="zagadka zagadka3">
-            <div class="zagadka-img">
-                <img src="img/kirpich.webp" alt="">
+            <div class="zagadka zagadka1">
+                <div class="zagadka-img">
+                    <img src="img/lampa.jpg" alt="">
+                </div>
+                <div class="wrap-option">
+                    <h4 class="option option1">Есть комната с тремя лампочками. Перед входом в комнату есть три выключателя. Нажимать на выключатели можно без ограничений, но войти в соседнюю комнату можно лишь один раз. Человек узнал, какой выключатель включает определенную лампочку. Как он это сделал?</h4>
+                </div>
             </div>
-            <div class="wrap-option">
-                <h4 class="option option1">У строителя есть 8 кирпичей, 7 из которых имеют одинаковый вес, а один — тяжелее. Как строителю выявить бракованный кирпич с помощью весов всего за два взвешивания?</h4>
+    
+            <div class="zagadka zagadka2">
+                <div class="zagadka-img">
+                    <img src="img/cherepaha.png" alt="">
+                </div>
+                <div class="wrap-option">
+                    <h4 class="option option1">Ползут 3 черепахи. 1-я черепаха говорит: за мной ползут две черепахи. 2-я черепаха говорит: за мной ползёт одна черепаха и передо мной ползёт одна черепаха. А 3-я черепаха: передо мной ползут две черепахи, и за мной ползёт одна черепаха. Как такое может быть?</h4>
+                </div>
             </div>
-        </div>
+    
+            <div class="zagadka zagadka3">
+                <div class="zagadka-img">
+                    <img src="img/kirpich.webp" alt="">
+                </div>
+                <div class="wrap-option">
+                    <h4 class="option option1">У строителя есть 8 кирпичей, 7 из которых имеют одинаковый вес, а один — тяжелее. Как строителю выявить бракованный кирпич с помощью весов всего за два взвешивания?</h4>
+                </div>
+            </div>
+    
+            <div class="zagadka zagadka4">
+                <div class="zagadka-img">
+                    <img src="img/pdd.png" alt="">
+                </div>
+                <div class="wrap-option">
+                    <h4 class="option option1">Перед перекрестком на светофоре стоят и ждут зеленого света: фура, телега с лошадью и мотоциклист. Загорелся желтый, водитель фуры нажал на газ, отчего лошадь испугалась и укусила за ухо мотоциклиста. Кто из троих нарушил ПДД?</h4>
+                </div>
+            </div>
 
-        <div class="zagadka zagadka4">
-            <div class="zagadka-img">
-                <img src="img/pdd.png" alt="">
-            </div>
-            <div class="wrap-option">
-                <h4 class="option option1">Перед перекрестком на светофоре стоят и ждут зеленого света: фура, телега с лошадью и мотоциклист. Загорелся желтый, водитель фуры нажал на газ, отчего лошадь испугалась и укусила за ухо мотоциклиста. Кто из троих нарушил ПДД?</h4>
-            </div>
         </div>
-        
+        <button class="left" type="button" class="simple-slider__control simple-slider__control_type_prev"><svg aria-hidden="true" height="40" width="16"><use xlink:href="#icon-slider-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+        </button>
+    
+        <button class="right" type="button" class="simple-slider__control simple-slider__control_type_next visible-hidden"><svg aria-hidden="true" height="40" width="16"><use xlink:href="#icon-slider-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg>
+        </button>
     </div>
+
+    
+
+
+
 
     </div>
 
@@ -69,7 +83,7 @@
         <img class="logo" src="img/logo_md.gif" alt="">
     </a>
     
-
-    <!-- <script src="js/control5.js"></script> -->
+    <a class="home" href="index.html">На главную</a>
+    <script src="js/control5.js"></script>
 </body>
 </html>
