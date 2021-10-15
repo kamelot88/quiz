@@ -48,7 +48,7 @@ let count = 0;
 let width;
 
 function init() {
-  console.log('risize');
+  // console.log('risize');
   width = document.querySelector('.wrap-zagadka-slider').offsetWidth;
   sliderLine.style.width = width * colectionSlid.length + 'px';
   colectionSlid.forEach( item => {
