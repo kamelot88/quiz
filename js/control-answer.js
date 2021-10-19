@@ -12,8 +12,7 @@ const contentButton3 = document.querySelector("button.block3 > h3");
 const contentButton4 = document.querySelector("button.block4 > h3");
 const contentButton5 = document.querySelector("button.block5 > h3");
 
-const block1Add = document.querySelector("#ancwer-body > div > div.wrap-kategori-answer");
-// document.querySelector("#ancwer-body > div > div.wrap-kategori-answer > div.block-answer1.display-none");
+const block1Add = document.querySelector("#ancwer-body > div > div.wrap-kategori-answer > div.block-answer1.display-none");
 
 
 const block2Add = document.querySelector("body > div > div.wrap-kategori-answer > div.wrap-rebus");
@@ -213,46 +212,3 @@ var originStopCollection = [stopOrigin1, stopOrigin2, stopOrigin3, stopOrigin4, 
 
 
 
-
-
-const colectionSlid = document.querySelectorAll(".wrap-zagadka-slider > .slider-line > .zagadka"); // получаю коллекцию элементов слайдера
-const slide = document.querySelector(".wrap-zagadka-slider > .slider-line > .zagadka");
-const sliderLine = document.querySelector('.slider-line');
-
-let count = 0;
-
-let width;
-
-function init() {
-  // console.log('risize');
-  width = document.querySelector('.wrap-zagadka-slider').offsetWidth;
-  sliderLine.style.width = width * colectionSlid.length + 'px';
-  colectionSlid.forEach( item => {
-    item.style.width = width + "px";
-    item.style.height = "auto";
-  });
-  rollSlider();
-}
-window.addEventListener('resize', init);
-init();
-
-document.querySelector('.left').addEventListener('click', function() {
-  count--;
-  if (count < 0) {
-    count = colectionSlid.length - 1;
-  }
-  rollSlider();
-});
-
-
-document.querySelector('.right').addEventListener('click', function() {
-  count++;
-  if (count >= colectionSlid.length) {
-    count = 0;
-  }
-  rollSlider();
-});
-
-function rollSlider() {
-  sliderLine.style.transform = 'translate(-'+count*width+'px)';
-}
